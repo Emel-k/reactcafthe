@@ -34,6 +34,8 @@ function ProductDetail(props) {
                     <p>{produit.description}</p>
                     <p>{produit.type}</p>
                     <p>{produit.prix}</p>
+                    <p>{produit.typeUnite}</p>
+                    <p>{produit.typePoids}</p>
                     <button className="btn">Acheter ce produit</button>
                 </div>
 
