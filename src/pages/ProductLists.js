@@ -3,6 +3,7 @@ import axios from "axios";
 import ProductCard from "../components/ProductCard";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css"
+import "../styles/Card.css"
 
 // npm install react-loading-skeleton
 // npm install axios
@@ -24,9 +25,9 @@ function ProductLists(props) {
     void fetchProduits()
     },[]);
 
-    if (!isLoading){
+    if (isLoading){
         return(
-            <div className="product-list">
+            <div >
                 {Array.from({length : 6}).map((_,i) => (
                     <div key={i} className="product-skeleton">
                         <Skeleton height={200} width={300}/>
@@ -47,9 +48,9 @@ function ProductLists(props) {
 
 
     return (
-        <div>
+        <div className="product-list"  >
             <h3> Listes des produits</h3>
-            <div>
+            <div className="fiche" >
                 {produits.map((produit) => (
                     <ProductCard key={produit.produitsID} produit={produit} />
                 ))}

@@ -3,7 +3,7 @@ import React from 'react';
 
 function Navbar(props) {
     return (
-        <div>
+
             <nav>
                 <div>LOGO</div>
 
@@ -20,7 +20,7 @@ function Navbar(props) {
 
 
             </nav>
-        </div>
+
     );
 }
 

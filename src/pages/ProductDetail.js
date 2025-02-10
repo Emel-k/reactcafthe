@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import "../styles/navbar.css"
+import "../styles/FicheCard.css"
+
 
 function ProductDetail(props) {
     const { id } = useParams();
@@ -24,11 +26,19 @@ function ProductDetail(props) {
 
 
     return (
-        <div>
-            <h3>{produit.nom}</h3>
-            <p>{produit.description}</p>
-            <p>{produit.type}</p>
-            <p>{produit.prix}</p>
+        <div className="description">
+            <div className="describe_one">
+                <div className="pix-one">image</div>
+                <div className="describe-column">
+                    <h3>{produit.nom}</h3>
+                    <p>{produit.description}</p>
+                    <p>{produit.type}</p>
+                    <p>{produit.prix}</p>
+                    <button className="btn">Acheter ce produit</button>
+                </div>
+
+            </div>
+
         </div>
     );
 }

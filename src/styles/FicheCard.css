@@ -1,0 +1,39 @@
+.description{
+    background: chocolate;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.describe_one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.pix-one{
+    border: black;
+    background: white;
+    height: 300px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.describe-column{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 150px;
+}
+
+.btn{
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    justify-items: center;
+    margin: 20px;
+}
