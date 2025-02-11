@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(247, 236, 219);
+}
+
+.banner{
+    background: rgb(169,200,130);
+    background: radial-gradient(circle, rgb(187,180,145) 34%, rgba(168,124,103,1) 73%);
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side{
+    height: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Al Tarikh" ;
+    font-weight: bold;
+}
+
+.right-side{
+    height: 200px;
+    width: 50%;
+}
+
+.container-boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+p > a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: -4px 7px 15px -3px rgba(145,103,39,0.68);
+    border-radius: 50px;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.cafe-produit{
+    background: rgba(168,124,103,1);
+}
+
+.the-produit{
+    background: rgb(187,180,145);
+}
+
+.container-story{
+    display: flex;
+    justify-content: space-between;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -4px 7px 15px -3px rgba(145,103,39,0.68);
+    border-radius: 50px;
+    margin: 20px;
+    height: 350px;
+    width: 70%;
+}
+
+.story-text{
+    height: 100px;
+}
+
+.story-title{
+    font-size: 2.5rem;
+}
+
+.story-paragraph{
+    height: 150px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+img{
+    border-radius: 50px;
+    margin: 20px;
+}

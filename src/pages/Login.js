@@ -2,17 +2,21 @@ import React, {useContext, useState} from 'react';
 import "../styles/login.css"
 import axios from "axios";
 import {AuthContext} from "../context/AuthContext";
+import {useNavigate} from "react-router-dom";
 
 function Login(props) {
 
     const {login} = useContext(AuthContext)// fonction login venant du contexte
+    const navigate = useNavigate(); //La navigation
+
 
     const[email, setEmail] = useState("");
     const [mot_de_passe, setMot_de_passe] = useState("");
-    const {errorMsg, setErrorMsg} = useState("");
+    const [errorMsg, setErrorMsg]= useState("");
 
     const handleSubmit = async (e) => {
             e.preventDefault();
+            setErrorMsg("");
 
             try {
                 const response = await axios.post("http://localhost:3000/api/client/login",
@@ -22,8 +26,24 @@ function Login(props) {
                     },
                     );
                 const {token, client} = response.data
-                console.log(token, client)
-            } catch (error) {}
+
+                //On met à jour contexte d'authentification
+
+                login(token, client);
+
+                // Redirection du client vers une page
+
+                navigate("/");
+
+            } catch (error) {
+                console.error("Erreur lors de la connexion :", error);
+
+                if(error.response.data.message){
+                    setErrorMsg(error.response.data.message);
+                } else{
+                    setErrorMsg("Erreur");
+                }
+            }
     }
 
     return (
@@ -45,6 +65,10 @@ function Login(props) {
                    value={mot_de_passe}
                    onChange={(e) => setMot_de_passe(e.target.value)}
                    required/>
+
+            {errorMsg && (
+                <div style={{color: "red", marginBottom :10}}>{errorMsg}</div>
+            )}
 
             <button className="btn-login" type="submit">Connexion</button>
         </form>

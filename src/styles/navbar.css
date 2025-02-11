@@ -22,7 +22,7 @@ nav{
     width: 20%;
     justify-content: left;
 }
-a{
+.link-nav{
     color: brown;
     margin: 5px;
     text-decoration: none;

@@ -5,6 +5,9 @@ import Layout from "./layout/Layout";
 import ProductDetail from "./pages/ProductDetail";
 import {AuthProvider} from "./context/AuthContext";
 import Login from "./pages/Login";
+import The from "./pages/The";
+import Cafe from "./pages/Cafe";
+import Accesoires from "./pages/Accesoires";
 
 function App() {
   return (
@@ -15,6 +18,10 @@ function App() {
                     <Route index element={<Home />}/>
                     <Route path="produits/:id" element={<ProductDetail />}/>
                     <Route path={"login"} element={<Login />} />
+                    <Route path={"The"} element={<The/>} />
+                    <Route path={"Cafe"} element={<Cafe/>} />
+                    <Route path={"Accesoires"} element={<Accesoires />} />
+
                 </Route>
             </Routes>
         </BrowserRouter>
