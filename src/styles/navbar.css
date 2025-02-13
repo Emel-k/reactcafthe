@@ -3,13 +3,18 @@
     padding: 0;
 }
 
-nav{
+.nav-bar{
     ;
     display: flex;
     align-items: center;
     height: 50px;
     width: 100%;
     justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.logo-ct{
+    margin: 5px;
 }
 
 .cafe_the{
@@ -24,7 +29,7 @@ nav{
 }
 .link-nav{
     color: brown;
-    margin: 5px;
+    margin: 10px;
     text-decoration: none;
 }
 
@@ -32,4 +37,31 @@ li{
     text-decoration: none;
     list-style: none;
     margin: 10px;
+}
+
+.btn-logout{
+    margin: 5px;
+    height: 35px;
+    width: 140px;
+    border-radius: 20px;
+    background-color: saddlebrown;
+    color:white ;
+}
+
+.btn-login{
+    margin: 5px;
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    background-color: saddlebrown;
+    color:white ;
+}
+
+.btn-login-nav{
+    margin: 5px;
+    height: 30px;
+    width: 140px;
+    border-radius: 20px;
+    background-color: saddlebrown;
+    color:white ;
 }

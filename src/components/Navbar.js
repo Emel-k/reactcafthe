@@ -12,8 +12,8 @@ function Navbar(props) {
 
     return (
 
-            <nav>
-                <div><Link to="/">LOGO</Link></div>
+            <nav className="nav-bar">
+                <div><Link className="logo-ct" to="/">LOGO</Link></div>
 
                     <div>
                         {isAuthenticated ? (
@@ -27,17 +27,17 @@ function Navbar(props) {
 
                     <ul className="cafe_the">
                         <li><Link to="/Cafe" className="link-nav">Café</Link></li>
-                        <li><Link to="/Te" className="link-nav">Thé</Link></li>
-                        <li><Link to="/Accesoires" className="link-nav">Accesoires</Link></li>
+                        <li><Link to="/The" className="link-nav">Thé</Link></li>
+                        <li><Link to="/Accesoires" className="link-nav">Accessoires</Link></li>
                     </ul>
                     <ul className="left">
                         <li><Link to="/Panier" className="link-nav">Panier</Link></li>
                         <li><Link to="/search" className="link-nav">search</Link></li>
                         {isAuthenticated ? (
                             <>
-                                <button onClick={handleLogout}>Se déconnecter</button></>
+                                <button className="btn-logout" onClick={handleLogout}>Se déconnecter</button></>
                         ): (
-                            <Link to='/login'>Se connecter</Link>
+                            <button className="btn-login-nav" to='/login' >Se connecter</button>
                         )}
                     </ul>
 

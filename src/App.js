@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import The from "./pages/The";
 import Cafe from "./pages/Cafe";
 import Accesoires from "./pages/Accesoires";
+import Panier from "./pages/Panier";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
                     <Route path={"login"} element={<Login />} />
                     <Route path={"The"} element={<The/>} />
                     <Route path={"Cafe"} element={<Cafe/>} />
-                    <Route path={"Accesoires"} element={<Accesoires />} />
+                    <Route path={"Accessoires"} element={<Accesoires />} />
+                    <Route path={"Panier"} element={<Panier />} />
 
                 </Route>
             </Routes>

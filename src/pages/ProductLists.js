@@ -7,14 +7,15 @@ import "../styles/Card.css"
 
 // npm install react-loading-skeleton
 // npm install axios
-function ProductLists(props) {
+function ProductLists() {
     const [produits, setProduits] = useState([]);
     const [isLoading, setIsloading] = useState(true);
+    console.log(localStorage.getItem("token"))
 
     useEffect(() => {
-    const fetchProduits =async () => {
+    const fetchProduits = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api/produits");
+            const response = await axios.get("http://localhost:3000/api/produits", {headers : {Authorization : `Bearer ${localStorage.getItem("token")}`}});
             setProduits(response.data)
         }catch (error) {
             console.error("Erreur de chargement des produits ", error);

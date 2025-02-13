@@ -2,6 +2,7 @@ import React from 'react';
 import ProductLists from "./ProductLists";
 import "../styles/Home.css"
 import Footer from "../components/Footer";
+import {Link} from "react-router-dom";
 
 function Home(props) {
     return (
@@ -20,15 +21,15 @@ function Home(props) {
             <section className="container-boxes">
 
                 <div className="cafe-produit box">
-                    <p><a href="#">Produit Café</a></p>
+                    <Link to="/Cafe" className="link-nav">Produit Café</Link>
                 </div>
 
                 <div className="the-produit box">
-                    <p><a href="#">Produit Thé</a></p>
+                    <Link to="/The" className="link-nav">Produit Thé</Link>
                 </div>
 
                 <div className="accessory-produit box">
-                    <p><a href="#">Accessoire</a></p>
+                    <Link to="/search" className="link-nav">Accesoires</Link>
                 </div>
 
             </section>
@@ -49,8 +50,6 @@ function Home(props) {
                     <img src=".idea/src/field.jpg" alt="illustration dessin de champ" height="350px" width="400px"/>
                 </div>
             </section>
-            <Footer />
-            <ProductLists/>
         </>
 
     );
