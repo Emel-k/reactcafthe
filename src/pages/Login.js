@@ -3,6 +3,7 @@ import "../styles/login.css"
 import axios from "axios";
 import {AuthContext} from "../context/AuthContext";
 import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Login(props) {
 
@@ -69,6 +70,10 @@ function Login(props) {
             {errorMsg && (
                 <div style={{color: "red", marginBottom :10}}>{errorMsg}</div>
             )}
+
+            <div className="password-edit">
+                <Link to="/PasswordForgot" className="link-password"> Mot de passe oublié ?</Link>
+            </div>
 
             <button className="btn-login" type="submit">Connexion</button>
         </form>

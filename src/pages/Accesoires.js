@@ -1,9 +1,12 @@
 import React from 'react';
+import ProductLists from "./ProductLists";
 
-function Accesoires(props) {
+function Accessoires(props) {
     return (
-        <div></div>
+        <>
+            <ProductLists />
+        </>
     );
 }
 
-export default Accesoires;
+export default Accessoires;

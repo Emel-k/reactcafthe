@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+footer{
+    margin-top: 50px;
+}
 
 .link-footer{
     background: rgb(169,200,130);

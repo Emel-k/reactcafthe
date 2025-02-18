@@ -5,7 +5,6 @@ import ProductLists from "./ProductLists";
 function The(props) {
     return (
         <>
-
             <ProductLists />
         </>
     );

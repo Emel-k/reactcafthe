@@ -4,19 +4,58 @@ import ProductCard from "../components/ProductCard";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css"
 import "../styles/Card.css"
+import {useParams} from "react-router-dom";
 
 // npm install react-loading-skeleton
 // npm install axios
 function ProductLists() {
     const [produits, setProduits] = useState([]);
     const [isLoading, setIsloading] = useState(true);
-    console.log(localStorage.getItem("token"))
 
     useEffect(() => {
     const fetchProduits = async () => {
         try {
             const response = await axios.get("http://localhost:3000/api/produits", {headers : {Authorization : `Bearer ${localStorage.getItem("token")}`}});
-            setProduits(response.data)
+
+            // Récupère le chemin de l'URL et le divise en un tableau en utilisant le caractère "/"
+            // eslint-disable-next-line no-restricted-globals
+            const currentLink = self.location.pathname.split("/");
+
+// Crée un tableau temporaire pour stocker les résultats filtrés
+            let temp = [];
+
+// Vérifie si le deuxième segment de l'URL est "The"
+            if (currentLink[1] === "The") {
+                // Si l'URL contient "The", filtre les éléments de type "thé"
+                for (let i = 0; i < response.data.length; i++) {
+                    // Si l'élément actuel est de type "thé", on l'ajoute à temp
+                    if (response.data[i].type === "thé") {
+                        temp.push(response.data[i]);
+                    }
+                }
+            }
+// Si le deuxième segment de l'URL est "Cafe"
+            else if (currentLink[1] === "Cafe") {
+                // Si l'URL contient "Cafe", filtre les éléments de type "café"
+                for (let i = 0; i < response.data.length; i++) {
+                    // Si l'élément actuel est de type "café", on l'ajoute à temp
+                    if (response.data[i].type === "café") {
+                        temp.push(response.data[i]);
+                    }
+                }
+            }
+// Si le deuxième segment de l'URL n'est ni "The" ni "Cafe"
+            else {
+                // Si l'URL ne correspond à aucune catégorie spéciale, filtre les éléments de type "accessoire"
+                for (let i = 0; i < response.data.length; i++) {
+                    // Si l'élément actuel est de type "accessoire", on l'ajoute à temp
+                    if (response.data[i].type === "accessoire") {
+                        temp.push(response.data[i]);
+                    }
+                }
+            }
+
+            setProduits(temp)
         }catch (error) {
             console.error("Erreur de chargement des produits ", error);
         }finally {

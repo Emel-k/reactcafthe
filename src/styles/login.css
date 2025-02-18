@@ -29,7 +29,17 @@ input{
     margin: 0px auto;
 
     border-radius: 20px;
-    width: 100px;
-    height: 30px;
+    width: 110px;
+    height: 35px;
     justify-items: center;
+}
+
+.password-edit{
+    margin: 10px;
+}
+
+.link-password{
+    text-decoration: none;
+    list-style: none ;
+    color: brown;
 }

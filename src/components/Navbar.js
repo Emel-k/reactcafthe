@@ -9,7 +9,6 @@ function Navbar(props) {
         logout();
     }
 
-
     return (
 
             <nav className="nav-bar">
@@ -28,7 +27,7 @@ function Navbar(props) {
                     <ul className="cafe_the">
                         <li><Link to="/Cafe" className="link-nav">Café</Link></li>
                         <li><Link to="/The" className="link-nav">Thé</Link></li>
-                        <li><Link to="/Accesoires" className="link-nav">Accessoires</Link></li>
+                        <li><Link to="/Accessoires" className="link-nav">Accessoires</Link></li>
                     </ul>
                     <ul className="left">
                         <li><Link to="/Panier" className="link-nav">Panier</Link></li>
@@ -37,7 +36,7 @@ function Navbar(props) {
                             <>
                                 <button className="btn-logout" onClick={handleLogout}>Se déconnecter</button></>
                         ): (
-                            <button className="btn-login-nav" to='/login' >Se connecter</button>
+                            <Link to="/Login"><button className="btn-login-nav">Se connecter</button></Link>
                         )}
                     </ul>
 
