@@ -34,7 +34,8 @@ function Navbar(props) {
                         <li><Link to="/search" className="link-nav">search</Link></li>
                         {isAuthenticated ? (
                             <>
-                                <button className="btn-logout" onClick={handleLogout}>Se déconnecter</button></>
+                                <button className="btn-logout" onClick={handleLogout}>Se déconnecter</button>
+                            </>
                         ): (
                             <Link to="/Login"><button className="btn-login-nav">Se connecter</button></Link>
                         )}

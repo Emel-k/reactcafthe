@@ -88,14 +88,17 @@ function ProductLists() {
 
 
     return (
+        <>
+
+            <h3 className="list-produits"> Listes des produits</h3>
         <div className="product-list"  >
-            <h3> Listes des produits</h3>
             <div className="fiche" >
                 {produits.map((produit) => (
                     <ProductCard key={produit.produitsID} produit={produit} />
                 ))}
             </div>
         </div>
+        </>
     );
 }
 
