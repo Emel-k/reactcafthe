@@ -4,7 +4,7 @@
 }
 
 body{
-    background: rgb(247, 236, 219);
+    background: #FDFBD4;
 }
 
 .banner{
@@ -58,11 +58,11 @@ p > a{
 }
 
 .cafe-produit{
-    background: rgba(168,124,103,1);
+    background: #BAB095;
 }
 
 .the-produit{
-    background: rgb(187,180,145);
+    background: #E0EDBB;
 }
 
 .container-story{

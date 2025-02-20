@@ -1,6 +1,8 @@
 import React, {useContext} from 'react';
 import {Link} from "react-router-dom"
 import {AuthContext} from "../context/AuthContext";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 
 function Navbar(props) {
@@ -30,8 +32,13 @@ function Navbar(props) {
                         <li><Link to="/Accessoires" className="link-nav">Accessoires</Link></li>
                     </ul>
                     <ul className="left">
-                        <li><Link to="/Panier" className="link-nav">Panier</Link></li>
-                        <li><Link to="/search" className="link-nav">search</Link></li>
+                        <li><Link to="/Panier" className="link-nav"><FontAwesomeIcon icon={faCartShopping} size="1x" /></Link></li>
+                        <div>
+                            <input className="search"
+                                type="text"
+                            placeholder="Recherche..."
+                            />
+                        </div>
                         {isAuthenticated ? (
                             <>
                                 <button className="btn-logout" onClick={handleLogout}>Se déconnecter</button>
