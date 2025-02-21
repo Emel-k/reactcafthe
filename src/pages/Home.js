@@ -13,7 +13,7 @@ function Home(props) {
                     <h1>CAF'THÉ</h1>
                 </div>
                 <div className="right-side">
-                    <img src=".idea/src/different-drinks.png" alt="Image de café et de thé" height="200px"
+                    <img src="./" alt=" café et de thé" height="200px"
                          width="400px"/>
                 </div>
             </div>
@@ -47,7 +47,7 @@ function Home(props) {
 
                 </div>
                 <div className="picture">
-                    <img src=".idea/src/field.jpg" alt="illustration dessin de champ" height="350px" width="400px"/>
+                    <img src="" alt="dessin de champ" height="350px" width="400px"/>
                 </div>
             </section>
         </>

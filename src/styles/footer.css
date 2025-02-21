@@ -7,12 +7,10 @@ footer{
 }
 
 .link-footer{
-    background: rgb(169,200,130);
-    background: radial-gradient(circle, rgb(187,180,145) 34%, rgba(168,124,103,1) 73%);
+    border-top: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 150px  ;
 
 }
 .link-must{

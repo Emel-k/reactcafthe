@@ -11,15 +11,15 @@ import "../styles/Card.css"
 function ProductLists() {
     const [produits, setProduits] = useState([]);
     const [isLoading, setIsloading] = useState(true);
+    // eslint-disable-next-line no-restricted-globals
+    const currentLink = self.location.pathname.split("/");
 
     useEffect(() => {
     const fetchProduits = async () => {
         try {
             const response = await axios.get("http://localhost:3000/api/produits", {headers : {Authorization : `Bearer ${localStorage.getItem("token")}`}});
 
-            // Récupère le chemin de l'URL et le divise en un tableau en utilisant le caractère "/"
-            // eslint-disable-next-line no-restricted-globals
-            const currentLink = self.location.pathname.split("/");
+            // Récupère le chemin de l'URL et le divise en un tableau en utilisant le caractère "//
 
 // Crée un tableau temporaire pour stocker les résultats filtrés
             let temp = [];
@@ -89,15 +89,16 @@ function ProductLists() {
 
     return (
         <>
-
-            <h3 className="list-produits"> Listes des produits</h3>
-        <div className="product-list"  >
-            <div className="fiche" >
-                {produits.map((produit) => (
-                    <ProductCard key={produit.produitsID} produit={produit} />
-                ))}
+            <div className="main-part">
+                <h3 className={`list-produits`}> Listes des produits</h3>
+                <div className="product-list"  >
+                    <div className={`fiche`} >
+                        {produits.map((produit) => (
+                            <ProductCard key={produit.produitsID} produit={produit} />
+                        ))}
+                    </div>
+                </div>
             </div>
-        </div>
         </>
     );
 }
