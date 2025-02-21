@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductLists from "./ProductLists";
+
 import "../styles/Home.css"
-import Footer from "../components/Footer";
+
 import {Link} from "react-router-dom";
 
 function Home(props) {
