@@ -1,7 +1,40 @@
 {
   "name": "reactcafthe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Emel-k/reactcafthe.git"
+  },
   "private": true,
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.8.1",
     "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-fontawesome": "^1.7.1",
+    "react-loading-skeleton": "^3.5.0",
+    "react-router-dom": "^7.2.0",
+    "react-scripts": "^5.0.1",
+    "start": "^5.1.0",
+    "styled-components": "^6.1.15"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
