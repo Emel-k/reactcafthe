@@ -87,7 +87,7 @@ function ProductLists() {
     }
 
 
-    return (
+    return
         <>
             <div className="main-part">
                 <h3 className={`list-produits`}> Listes des produits</h3>
