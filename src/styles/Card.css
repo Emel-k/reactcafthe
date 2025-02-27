@@ -45,10 +45,12 @@
 
 .fiche-The {
     border: 2px solid #4c7d15;
+    box-shadow: 5px 5px 5px #4c7d15;
 }
 
 .fiche-Accessoires {
     border: 2px solid #123456;
+    box-shadow: 5px 5px 5px #123456;
 }
 
 .pix{

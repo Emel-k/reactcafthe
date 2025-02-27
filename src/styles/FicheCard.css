@@ -17,16 +17,17 @@
 
 .pix-one{
     border: black;
-    background: antiquewhite;
+    /*background: antiquewhite;*/
     height: 300px;
     width: 200px;
-    margin-right: 20px;
+
 }
 
 .describe-column{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+
+    /*padding: 20px;*/
     height: 150px;
 }
 

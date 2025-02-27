@@ -28,7 +28,7 @@ function ProductDetail(props) {
     return (
         <div className="description">
             <div className="describe_one">
-                <div className="pix-one">image</div>
+                <img src="/image/jocelyn-morales-mUrewiMZRro-unsplash.jpg" alt="" height="430px" width="350px"/>
                 <div className="describe-column">
                     <h3>{produit.nom}</h3>
                     <p>{produit.description}</p>
