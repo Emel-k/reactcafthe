@@ -3,7 +3,7 @@ import axios from "axios";
 import ProductCard from "../components/ProductCard";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css"
-import "../styles/Card.css"
+import "../styles/ProductCard.css"
 
 
 // npm install react-loading-skeleton

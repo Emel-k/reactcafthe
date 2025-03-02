@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import "../styles/navbar.css"
-import "../styles/FicheCard.css"
+import "../styles/ProductDetail.css"
 
 
 function ProductDetail(props) {
@@ -24,18 +24,19 @@ function ProductDetail(props) {
         void fetchProduit()
     }, [id]);
 
+    const productImage = `/image/${produit.image || "placeholder.webp"}`;
 
     return (
         <div className="description">
             <div className="describe_one">
-                <img src="/image/jocelyn-morales-mUrewiMZRro-unsplash.jpg" alt="" height="430px" width="350px"/>
+                <div className="pix-image"><img src={productImage} alt={produit.nom}/> </div>
                 <div className="describe-column">
-                    <h3>{produit.nom}</h3>
-                    <p>{produit.description}</p>
-                    <p>{produit.type}</p>
-                    <p>{produit.prix}</p>
-                    <p>{produit.typeUnite}</p>
-                    <p>{produit.typePoids}</p>
+                    <h3 className="title-product">{produit.nom}</h3>
+                    <p className="space">{produit.description}</p>
+                    <p className="space">{produit.type}</p>
+                    <p className="space">{produit.prix}€</p>
+                    <p className="space">{produit.typeUnite}</p>
+                    <p className="space">{produit.typePoids}g</p>
                     <button className="btn">Acheter ce produit</button>
                 </div>
 
