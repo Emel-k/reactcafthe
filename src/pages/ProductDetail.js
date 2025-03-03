@@ -14,7 +14,7 @@ function ProductDetail(props) {
         const fetchProduit = async () => {
             try {
 
-                const response = await axios.get(`http://localhost:8889/api/produits/details/${id}`);
+                const response = await axios.get(`http://localhost:3000/api/produits/details/${id}`);
                 setProduit(response.data)
             }catch (error) {
                 console.error("Erreur de chargement du produit ", error);
@@ -24,7 +24,7 @@ function ProductDetail(props) {
         void fetchProduit()
     }, [id]);
 
-    const productImage = `/image/${produit.image || "placeholder.webp"}`;
+    const productImage = `/image/${produit.image_url || "placeholder.webp"}`;
 
     return (
         <div className="description">

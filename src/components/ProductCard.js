@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 function ProductCard({produit}) {
     // eslint-disable-next-line no-restricted-globals
     const currentLink = self.location.pathname.split("/");
-    const productImage = `/image/${produit.image || 'image/placeholder.webp'}`;
+    const productImage = `/image/${produit.image_url || 'image/placeholder.webp'}`;
 
     return (
         <div className={`card fiche-${currentLink[1]}`}>

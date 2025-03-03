@@ -17,7 +17,7 @@ function ProductLists() {
     useEffect(() => {
     const fetchProduits = async () => {
         try {
-            const response = await axios.get("http://localhost:8889/api/produits", {headers : {Authorization : `Bearer ${localStorage.getItem("token")}`}});
+            const response = await axios.get("http://localhost:3000/api/produits", {headers : {Authorization : `Bearer ${localStorage.getItem("token")}`}});
 
             // Récupère le chemin de l'URL et le divise en un tableau en utilisant le caractère "//
 
@@ -87,16 +87,14 @@ function ProductLists() {
     }
 
 
-    return(
+    return (
         <>
             <div className="main-part">
                 <h3 className={`list-produits`}> Listes des produits</h3>
                 <div className="product-list"  >
                     <div className={`fiche`} >
-
                         {produits.map((produit) => (
                             <ProductCard key={produit.produitsID} produit={produit} />
-
                         ))}
                     </div>
                 </div>

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.titre-accessory{
+    color:  white ;
+
+    height: 100px;
+    font-size: 5rem;
+    text-shadow: 2px 50px 2px #fffaf9e6;
+    padding: 8px;
+}
+
+
+
+.titre-style-accessory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 70%;
+}
+.accessory-filtre{
+    margin: 0;
+    z-index: -1;
+}
