@@ -9,6 +9,7 @@ import The from "./pages/The";
 import Cafe from "./pages/Cafe";
 import Panier from "./pages/Panier";
 import Accessoires from "./pages/Accesoires";
+import PasswordForgot from "./pages/PasswordForgot";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                     <Route path={"Cafe"} element={<Cafe/>} />
                     <Route path={"Accessoires"} element={<Accessoires />} />
                     <Route path={"Panier"} element={<Panier />} />
+                    <Route path={"PasswordForgot"} element={<PasswordForgot />} />
                 </Route>
             </Routes>
         </BrowserRouter>

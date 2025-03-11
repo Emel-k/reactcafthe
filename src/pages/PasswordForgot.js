@@ -1,6 +1,5 @@
-/*
 import React, {useState} from 'react';
-
+import "../styles/passwordForgot.css"
 
 function PasswordForgot(props) {
     const [email, setEmail] = useState("");
@@ -13,28 +12,32 @@ function PasswordForgot(props) {
         setErrorMsg("");
 
         try {
-            const response = await axios.put("http://localhost:3000/api/client/pwmodif",
+            const response = await axios.put(`${process.env.REACT_APP_API_URL}/api/client/pwmodif`,
                 {
                     email,
                     telephone,
                     date_naissance,
                 },
                 )
-        }
+        } catch (error){}
     }
 
     return (
-        <form >
-            <label htmlFor="">Votre adresse mail</label>
-            <input type="text"/>
+        <form className="form-pwd">
+            <div className="container-pwd">
+                <label htmlFor="" className='input-pwd'>Votre adresse mail</label>
+                <input type="text"/>
 
-            <label htmlFor="">Votre date de naissance</label>
-            <input type="text"/>
+                <label htmlFor="" className='input-pwd'>Votre date de naissance</label>
+                <input type="date"/>
 
-            <label htmlFor="">Votre numero de téléphone</label>
+
+                <label htmlFor="" className='input-pwd'>Votre numero de téléphone</label>
+                <input type="tel"/>
+            </div>
         </form>
 
     );
 }
 
-export default PasswordForgot;*/
+export default PasswordForgot;

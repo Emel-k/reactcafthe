@@ -17,7 +17,7 @@ function ProductLists() {
     useEffect(() => {
     const fetchProduits = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api/produits", {headers : {Authorization : `Bearer ${localStorage.getItem("token")}`}});
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/produits`, {headers : {Authorization : `Bearer ${localStorage.getItem("token")}`}});
 
             // Récupère le chemin de l'URL et le divise en un tableau en utilisant le caractère "//
 

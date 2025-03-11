@@ -20,7 +20,7 @@ function Login(props) {
             setErrorMsg("");
 
             try {
-                const response = await axios.post("http://localhost:8889/api/client/login",
+                const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/client/login`,
                     {
                         email,
                         mot_de_passe,
