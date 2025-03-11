@@ -15,7 +15,7 @@ const BackgroundDiv = styled.div`
 `;
 function The() {
     useEffect(() => {
-        document.body.style.backgroundColor = '#f7f1e9'; // Définir la couleur de fond pour Home
+        document.body.style.backgroundColor = '#F7F6F3'; // Définir la couleur de fond pour Home
         return () => {
             document.body.style.backgroundColor = ''; // Réinitialiser le fond lorsque la page est quittée
         };

@@ -5,7 +5,7 @@ import "../styles/navbar.css"
 import "../styles/ProductDetail.css"
 
 
-function ProductDetail(props) {
+function ProductDetail() {
     const { id } = useParams();
 
     const [produit, setProduit] = useState([]);
@@ -14,7 +14,9 @@ function ProductDetail(props) {
         const fetchProduit = async () => {
             try {
 
-                const response = await axios.get(`${process.env.REACT_APP_API_URL}api/produits/details/${id}`);
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/produits/details/${id}`);
+
+                console.log("Données reçues :", response.data);
                 setProduit(response.data)
             }catch (error) {
                 console.error("Erreur de chargement du produit ", error);
