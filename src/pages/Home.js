@@ -5,20 +5,15 @@ import "../styles/Home.css"
 import {Link} from "react-router-dom";
 import styled from "styled-components";
 
-const BackgroundDiv = styled.div`
-  width: 100%;
-  height: 60vh;
-  background-image: url('./image/CAF'THE.png);  /* Le chemin de l'image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-`;
+
 
 function Home(props) {
     return (
         <>
 
-            <img src="/image/CAF’THE.png" alt="" height="30%" width="100%" border-radius="none"/>
+
+                <img src="/image/1.png" alt="" height="30%" width="100%" border-radius="none"/>
+
             <section className="container-boxes">
 
                 <div className="cafe-produit box">

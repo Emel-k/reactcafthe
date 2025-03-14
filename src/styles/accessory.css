@@ -1,31 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
+.banner-acce{
+    width: 100%;
+    height: 60vh;
+    background-image: url('/public/image/4.png');  /* Le chemin de l'image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-
-
-
-.titre-accessory{
-    color:  white ;
-
-    height: 100px;
-    font-size: 5rem;
-    text-shadow: 2px 50px 2px #fffaf9e6;
-    padding: 8px;
-}
-
-
-
-.titre-style-accessory{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 70%;
-}
-.accessory-filtre{
-    margin: 0;
-    z-index: -1;
+.main-content{
+    background-image: url('/public/image/Wireframe - 3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
 }
