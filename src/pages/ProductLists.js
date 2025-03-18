@@ -91,11 +91,11 @@ function ProductLists() {
     return (
         <>
             <div className="main-part">
-                <h3 className={`list-produits`}> Listes des produits</h3>
                 <div className="product-list"  >
                     <div className={`fiche`} >
                         {produits.map((produit) => (
                             <ProductCard key={produit.produitsID} produit={produit} />
+
                         ))}
                     </div>
                 </div>

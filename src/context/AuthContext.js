@@ -9,7 +9,7 @@ export function AuthProvider({children}) {
     const [user, setUser] = useState(null);// client
     const [token, setToken] = useState(null);// token JWT
 
-    // Stockahe dans le LocalStorage pour la persistance des données
+    // Stockage dans le LocalStorage pour la persistance des données
 
     useEffect(() => {
         const storeToken = localStorage.getItem("token");

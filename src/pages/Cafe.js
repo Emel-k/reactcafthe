@@ -14,7 +14,7 @@ function Cafe() {
             </header>
 
             <main className="main-content-cafe">
-
+                <h3 className={`list-produits`}> Listes des cafés</h3>
                 <ProductLists />
             </main>
 

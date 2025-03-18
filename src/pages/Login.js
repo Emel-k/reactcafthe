@@ -73,9 +73,11 @@ function Login(props) {
 
             <div className="password-edit">
                 <Link to="/PasswordForgot" className="link-password"> Mot de passe oublié ?</Link>
+                <Link to="/Register" className="link-register">Créer votre compte Caf'The</Link>
             </div>
 
             <button className="btn-login" type="submit">Connexion</button>
+
         </form>
 
 

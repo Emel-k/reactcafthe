@@ -16,7 +16,7 @@ function The() {
                 </div>
             </header>
             <main className="main-content-the">
-
+                <h3 className={`list-produits`}> Listes des thés</h3>
                 <ProductLists />
             </main>
 

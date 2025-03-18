@@ -1,17 +1,10 @@
-.main-part{
 
-    padding-top: 50px;
-}
 
-.list-produits{
-    padding-bottom: 50px;
-    text-align: center;
-    font-size: 2rem;
-    color: saddlebrown;
-}
+
 
 .product-list{
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,11 +24,12 @@
 
 .fiche{
     padding: 20px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 60%;
 }
 
 .fiche-Cafe {
@@ -92,3 +86,4 @@
     font-size: 1rem;
     color: saddlebrown;
 }
+

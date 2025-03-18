@@ -10,6 +10,7 @@ import Cafe from "./pages/Cafe";
 import Panier from "./pages/Panier";
 import Accessoires from "./pages/Accesoires";
 import PasswordForgot from "./pages/PasswordForgot";
+import Register from "./pages/Register";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                     <Route path={"Accessoires"} element={<Accessoires />} />
                     <Route path={"Panier"} element={<Panier />} />
                     <Route path={"PasswordForgot"} element={<PasswordForgot />} />
+                    <Route path={"Register"} element={<Register />} />
                 </Route>
             </Routes>
         </BrowserRouter>

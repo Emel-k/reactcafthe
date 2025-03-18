@@ -25,7 +25,7 @@ input{
 }
 
 .btn-login{
-    margin: 0px auto;
+    margin: 5px auto;
 
     border-radius: 20px;
     width: 110px;
@@ -33,12 +33,18 @@ input{
     justify-items: center;
 }
 
-.password-edit{
-    margin: 10px;
-}
 
-.link-password{
+.password-edit{
+    display: flex;
+    flex-direction: column;
+}
+.link-password, .link-register {
     text-decoration: none;
     list-style: none ;
     color: brown;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 2px;
+
 }
+
