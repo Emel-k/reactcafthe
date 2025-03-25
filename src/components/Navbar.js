@@ -20,6 +20,7 @@ function Navbar(props) {
                         {isAuthenticated ? (
                             <>
                             <span>Bonjour {user.nom}{user.prenom}</span>
+                                <Link className="nav-profil" to="/Profil"> Votre compte </Link>
                             </>
                         ): (
                             ""

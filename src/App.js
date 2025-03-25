@@ -11,6 +11,7 @@ import Panier from "./pages/Panier";
 import Accessoires from "./pages/Accesoires";
 import PasswordForgot from "./pages/PasswordForgot";
 import Register from "./pages/Register";
+import Profil from "./pages/Profil";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                     <Route path={"Panier"} element={<Panier />} />
                     <Route path={"PasswordForgot"} element={<PasswordForgot />} />
                     <Route path={"Register"} element={<Register />} />
+                    <Route path={"Profil"} element={<Profil />} />
                 </Route>
             </Routes>
         </BrowserRouter>
