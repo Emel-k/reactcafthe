@@ -148,7 +148,7 @@ p > a{
     display: inline-block;
     position: relative;
     transform: translateX(0);
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -169,7 +169,7 @@ p > a{
 
 .story-title.visible .right-title {
     transform: translateX(0);
-    transition-delay: 0.4s; /* Délai de 0.3 seconde */
+    transition-delay: 0.60s; /* Délai de 0.3 seconde */
 }
 
 @keyframes slide-in-left {
