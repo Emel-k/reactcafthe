@@ -11,12 +11,13 @@
     align-items: center;
     height: 50px;
     width: 100%;
-    justify-content: space-between;
-
-}
+justify-content: space-between;}
 
 .logo-ct{
     margin: 5px;
+    text-decoration: none;
+    font-family: horizon;
+    color: #6E260E;
 }
 
 .cafe_the{
@@ -26,12 +27,16 @@
 
 .left{
     display: flex;
-    width: 25%;
+    align-items: center;
+    justify-content: center;
+
 }
 .link-nav{
-    color: brown;
+    color: #6E260E;
     margin: 10px;
     text-decoration: none;
+    font-family: horizon;
+    font-size: 13px;
 }
 
 li{
@@ -40,14 +45,25 @@ li{
     margin: 10px;
 }
 
-.btn-logout{
+
+.login{
     margin: 5px;
-    height: 35px;
-    width: 140px;
-    border-radius: 20px;
-    background-color: saddlebrown;
-    color:white ;
+    text-decoration: none;
+    color: #6E260E ;
+    font-family: horizon;
+    font-size: 12px;
 }
+
+.logout{
+    margin: 5px;
+    width: 140px;
+    text-decoration: none;
+    color: #6E260E ;
+    font-family: horizon;
+    font-size: 12px;
+}
+
+
 
 .btn-login{
     margin: 5px;
@@ -58,24 +74,231 @@ li{
     color:white ;
 }
 
-.btn-login-nav{
-    margin: 5px;
-    height: 30px;
-    width: 105px;
-    border-radius: 20px;
-    background-color: saddlebrown;
-    color:white ;
+
+.search-bar{
+    position: relative;
 }
 
-.search{
-    background: saddlebrown;
-    opacity: 0.4;
-    height: 8px;
-    width: 90px;
-    margin: 5px;
+.input-search{
+    padding: 10px;
+    width: 101.5px;
+    height: 10px;
+    background: none;
+    border: 2px solid #612626;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    color: #6E260E;
+    outline: none;
+    transition: .5s;
 }
 
 
-/* #EDE8D0 ; #D6D39A ; #E0EDBB ; #BAB095
-https://www.figma.com/colors/beige/
-*/
+.search-bar:hover input{
+    width: 150px;
+
+    border-radius: 10px;
+}
+.search-bar i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: black;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+
+/*!* #EDE8D0 ; #D6D39A ; #E0EDBB ; #BAB095*/
+/*https://www.figma.com/colors/beige/*/
+/**!*/
+
+/*!* Base Styles *!*/
+/*.navbar-container {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 1rem 2rem;*/
+/*    background-color: #f7f1e9;*/
+/*    position: relative;*/
+/*    z-index: 1000;*/
+/*}*/
+
+/*.navbar-logo {*/
+/*    font-family: 'horizon', sans-serif;*/
+/*    font-size: 1.5rem;*/
+/*    color: #6E260E;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*!* Desktop Navigation *!*/
+/*.navbar-links {*/
+/*    display: flex;*/
+/*    gap: 2rem;*/
+/*}*/
+
+/*.nav-link {*/
+/*    color: #6E260E;*/
+/*    text-decoration: none;*/
+/*    font-family: 'horizon', sans-serif;*/
+/*    transition: color 0.3s;*/
+/*}*/
+
+/*.nav-link:hover {*/
+/*    color: #4B7D15;*/
+/*}*/
+
+/*.navbar-right {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 1.5rem;*/
+/*}*/
+
+/*.search-container {*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.search-input {*/
+/*    padding: 0.5rem 1rem;*/
+/*    border: 2px solid #612626;*/
+/*    border-radius: 50px;*/
+/*    outline: none;*/
+/*    width: 0;*/
+/*    transition: width 0.3s ease;*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.search-input.active {*/
+/*    width: 200px;*/
+/*    opacity: 1;*/
+/*    padding-right: 2rem;*/
+/*}*/
+
+/*.search-icon {*/
+/*    color: #6E260E;*/
+/*    cursor: pointer;*/
+/*    position: absolute;*/
+/*    right: 10px;*/
+/*}*/
+
+/*.nav-icon {*/
+/*    color: #6E260E;*/
+/*    font-size: 1.2rem;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 0.5rem;*/
+/*}*/
+
+/*.user-name {*/
+/*    font-family: 'horizon', sans-serif;*/
+/*    font-size: 0.9rem;*/
+/*}*/
+
+/*.login-btn, .logout-btn {*/
+/*    padding: 0.5rem 1rem;*/
+/*    border-radius: 20px;*/
+/*    font-family: 'horizon', sans-serif;*/
+/*    cursor: pointer;*/
+/*    border: none;*/
+/*}*/
+
+/*.login-btn {*/
+/*    background-color: transparent;*/
+/*    color: #6E260E;*/
+/*    border: 1px solid #6E260E;*/
+/*}*/
+
+/*.logout-btn {*/
+/*    background-color: #6E260E;*/
+/*    color: white;*/
+/*}*/
+
+/*!* Mobile Navigation *!*/
+/*.burger-icon {*/
+/*    display: none;*/
+/*    font-size: 1.5rem;*/
+/*    color: #6E260E;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.mobile-nav {*/
+/*    display: none;*/
+/*    flex-direction: column;*/
+/*    position: absolute;*/
+/*    top: 100%;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    background-color: #f7f1e9;*/
+/*    padding: 1rem;*/
+/*    box-shadow: 0 5px 10px rgba(0,0,0,0.1);*/
+/*}*/
+
+/*.mobile-link {*/
+/*    color: #6E260E;*/
+/*    text-decoration: none;*/
+/*    padding: 1rem 0;*/
+/*    border-bottom: 1px solid #e0d6c2;*/
+/*    font-family: 'horizon', sans-serif;*/
+/*}*/
+
+/*.mobile-search {*/
+/*    margin: 1rem 0;*/
+/*    position: relative;*/
+/*}*/
+
+/*.mobile-search-input {*/
+/*    width: 100%;*/
+/*    padding: 0.8rem 1rem;*/
+/*    border: 2px solid #612626;*/
+/*    border-radius: 50px;*/
+/*    outline: none;*/
+/*}*/
+
+/*.mobile-login, .mobile-logout {*/
+/*    margin-top: 1rem;*/
+/*    padding: 0.8rem;*/
+/*    text-align: center;*/
+/*    border-radius: 20px;*/
+/*    font-family: 'horizon', sans-serif;*/
+/*}*/
+
+/*.mobile-login {*/
+/*    background-color: #6E260E;*/
+/*    color: white;*/
+/*}*/
+
+/*.mobile-logout {*/
+/*    background-color: transparent;*/
+/*    color: #6E260E;*/
+/*    border: 1px solid #6E260E;*/
+/*}*/
+
+/*!* Responsive Breakpoint *!*/
+/*@media (max-width: 1024px) {*/
+/*    .navbar-links, .navbar-right {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .burger-icon {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .mobile-nav {*/
+/*        display: flex;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1025px) {*/
+/*    .mobile-menu {*/
+/*        display: none;*/
+/*    }*/
+/*}*/

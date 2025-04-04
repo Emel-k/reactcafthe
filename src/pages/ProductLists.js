@@ -8,7 +8,7 @@ import "../styles/ProductCard.css"
 
 // npm install react-loading-skeleton
 // npm install axios
-function ProductLists() {
+function ProductLists({handleClick}) {
     const [produits, setProduits] = useState([]);
     const [isLoading, setIsloading] = useState(true);
     // eslint-disable-next-line no-restricted-globals
@@ -94,7 +94,7 @@ function ProductLists() {
                 <div className="product-list"  >
                     <div className={`fiche`} >
                         {produits.map((produit) => (
-                            <ProductCard key={produit.produitsID} produit={produit} />
+                            <ProductCard key={produit.produitsID} produit={produit} handleClick={handleClick}/>
 
                         ))}
                     </div>

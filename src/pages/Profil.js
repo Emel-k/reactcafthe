@@ -35,9 +35,9 @@ function Profil() {
                     <li>nom : {user.nom}</li>
                     <li>nom : {user.email}</li>
 
-                    <li>Modifier le profile</li>
-                    <li>Modofier le mot de passe</li>
-                    <li>Supprimer mon compte</li>
+                    <li><a href="#"> Modifier le profile</a ></li>
+                    <li><a href="#">Modofier le mot de passe </a></li>
+                    <li><a href="#">Supprimer mon compte </a></li>
                     <li></li>
                 </ul>
             </div>

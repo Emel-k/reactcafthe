@@ -5,7 +5,7 @@ import "../styles/cafe.css"
 
 
 
-function Cafe() {
+function Cafe({handleclick}) {
 
     return (
         <>
@@ -14,7 +14,7 @@ function Cafe() {
             </header>
 
             <main className="main-content-cafe">
-                <h3 className={`list-produits`}> Listes des cafés</h3>
+                <h3 className={`list-produits`} handleclick={handleclick}> Listes des cafés</h3>
                 <ProductLists />
             </main>
 

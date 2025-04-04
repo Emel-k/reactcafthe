@@ -1,0 +1,33 @@
+.legal-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.legal-page h1 {
+    color: #4b2e1e;
+    margin-bottom: 20px;
+}
+
+.legal-page h2 {
+    color: #6c4b3b;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.legal-page a {
+    color: #8d4f2f;
+    text-decoration: underline;
+}
+
+.legal-page ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}

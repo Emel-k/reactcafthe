@@ -15,7 +15,7 @@ function Home(props) {
             </div>
 
             <section >
-                <h2 className="product-title"> Nos produits, soigneusement sélectionnés par nos soins </h2>
+                <h1 className="product-title"> Nos produits, soigneusement sélectionnés par nos soins </h1>
 
                 <div className="container-boxes">
 
@@ -36,7 +36,7 @@ function Home(props) {
 
             <section className="container-story">
                 <div className="story-title">
-                <h3 > <span className="texte left-title">Histoire de</span> <span className="texte right-title">CAF'THÉ</span></h3>
+                <h2 > <span className="texte left-title">Histoire de</span> <span className="texte right-title">CAF'THÉ</span></h2>
 
                 </div>
                 <div className="story-content">
@@ -60,7 +60,7 @@ function Home(props) {
 
             <section className="container-value">
                 <div className="story-title">
-                    <h3 > <span className="texte left-title">Nos</span> <span className="texte right-title">valeurs</span></h3>
+                    <h2 > <span className="texte left-title">Nos</span> <span className="texte right-title">valeurs</span></h2>
 
                 </div>
                 <div className="value-content">

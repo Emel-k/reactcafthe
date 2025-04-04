@@ -9,18 +9,19 @@ body{
 /*------------------ titre----------------*/
 .product-title{
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
+    text-align: center;
     font-family: horizon;
     position: relative;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .product-title::after,.product-title::before{
     content: '';
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: linear-gradient(to left, #6E260E, #4B7D15);
     bottom: -5px;
     left: 0;
@@ -128,6 +129,7 @@ p > a{
 
 .container-story, .container-value {
     display: flex;
+    font-size: 1.7rem;
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
@@ -135,22 +137,16 @@ p > a{
     margin: 0 auto;
 }
 /*------animation sous titre----*/
-.story-title{
-    display: flex;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    overflow: hidden;
-}
+
 
 .texte{
     display: inline-block;
     position: relative;
     transform: translateX(0);
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+font-family: 'Horizon', Arial, sans-serif;
 }
 
 .texte.left-title{
@@ -189,13 +185,15 @@ p > a{
         transform: translateX(0);
     }
 }
-
-.value-title {
-    font-size: 2rem;
+h2{
+    padding: 60px;
+}
+.story-title .value-title {
     text-align: center;
     margin-bottom: 30px;
     color: #333;
-    font-family: horizon;
+
+
 }
 
 .story-content, .value-content {
@@ -221,6 +219,7 @@ p > a{
     justify-content: center;
     align-items: center;
     padding: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .value {
@@ -265,3 +264,228 @@ p > a{
 }
 
 
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*body {*/
+/*    background: #F7F6F3;*/
+/*    font-family: 'Horizon', Arial, sans-serif;*/
+/*    line-height: 1.6;*/
+/*}*/
+
+/*!*------------------ Titre Responsive ----------------*!*/
+/*.product-title {*/
+/*    text-align: center;*/
+/*    font-size: clamp(1.5rem, 5vw, 2.5rem); !* Taille responsive *!*/
+/*    font-family: 'Horizon', sans-serif;*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    display: inline;*/
+/*    margin: 20px 0;*/
+/*    width: 90%;*/
+/*    max-width: 800px;*/
+/*}*/
+
+/*.product-title::after,*/
+/*.product-title::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 2px;*/
+/*    background: linear-gradient(to left, #6E260E, #4B7D15);*/
+/*    bottom: -5px;*/
+/*    left: 0;*/
+/*    transform: scaleX(0);*/
+/*    transform-origin: right;*/
+/*    transition: transform 0.4s ease-out;*/
+/*}*/
+
+/*.product-title::before {*/
+/*    top: -5px;*/
+/*    transform-origin: left;*/
+/*}*/
+
+/*.product-title:hover::after,*/
+/*.product-title:hover::before {*/
+/*    transform: scaleX(1);*/
+/*}*/
+
+/*!*------------------------- Grille Produits Responsive --------------*!*/
+/*.container-boxes {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+/*    gap: 30px;*/
+/*    padding: 20px;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 80vh;*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.box {*/
+/*    width: 100%;*/
+/*    height: 350px;*/
+/*    background: linear-gradient(145deg, #e6e6e6, #ffffff);*/
+/*    border-radius: 20px;*/
+/*    position: relative;*/
+/*    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.1),*/
+/*    -8px -8px 16px rgba(255, 255, 255, 0.8),*/
+/*    inset 4px 4px 8px rgba(0, 0, 0, 0.05),*/
+/*    inset -4px -4px 8px rgba(255, 255, 255, 0.5);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    transition: all 0.3s ease;*/
+/*    cursor: pointer;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.box:hover {*/
+/*    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1),*/
+/*    -4px -4px 8px rgba(255, 255, 255, 0.8),*/
+/*    inset 2px 2px 4px rgba(0, 0, 0, 0.05),*/
+/*    inset -2px -2px 4px rgba(255, 255, 255, 0.5);*/
+/*    transform: translate(2px, 2px);*/
+/*}*/
+
+/*.box:active {*/
+/*    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.1),*/
+/*    inset -6px -6px 12px rgba(255, 255, 255, 0.7);*/
+/*    transform: translate(4px, 4px);*/
+/*}*/
+
+/*.subtitle {*/
+/*    font-size: clamp(1.2rem, 4vw, 1.5rem);*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 10px;*/
+/*    text-shadow: 15px -13px 2px rgba(0,0,0,0.09);*/
+/*}*/
+
+/*.hcafe { color: #6E260E; }*/
+/*.hthe { color: #4B7D15; }*/
+/*.hacce { color: #8D847E; }*/
+
+/*.link-p {*/
+/*    text-decoration: none;*/
+/*    font-size: clamp(1rem, 3vw, 1.2rem);*/
+/*}*/
+
+/*!*------------------------------ Sections Responsives ----------------*!*/
+/*.container-story,*/
+/*.container-value {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    padding: 40px 20px;*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.story-title {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    font-size: clamp(1.5rem, 5vw, 2rem);*/
+/*    font-weight: bold;*/
+/*    text-transform: uppercase;*/
+/*    color: black;*/
+/*    overflow: hidden;*/
+/*    text-align: center;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.value-title {*/
+/*    font-size: clamp(1.5rem, 5vw, 2rem);*/
+/*    text-align: center;*/
+/*    margin-bottom: 30px;*/
+/*    color: #333;*/
+/*    font-family: 'Horizon', sans-serif;*/
+/*}*/
+
+/*.story-content,*/
+/*.value-content {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    font-family: 'Horizon', Arial, sans-serif;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    gap: 30px;*/
+/*}*/
+
+/*.value-content {*/
+/*    flex-direction: column-reverse;*/
+/*}*/
+
+/*.story,*/
+/*.value {*/
+/*    width: 100%;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*.story-paragraph,*/
+/*.value-paragraph {*/
+/*    text-align: left;*/
+/*    font-size: clamp(1rem, 3vw, 1.1rem);*/
+/*    line-height: 1.6;*/
+/*    color: #555;*/
+/*    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;*/
+/*}*/
+
+/*.picture {*/
+/*    width: 100%;*/
+/*    max-width: 500px;*/
+/*    border-radius: 20px;*/
+/*    overflow: hidden;*/
+/*    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1),*/
+/*    -4px -4px 8px rgba(255, 255, 255, 0.8);*/
+/*}*/
+
+/*.picture img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    object-fit: cover;*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*!* Media Queries pour les tablettes *!*/
+/*@media (min-width: 768px) {*/
+/*    .container-boxes {*/
+/*        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+/*    }*/
+
+/*    .story-content,*/
+/*    .value-content {*/
+/*        flex-direction: row;*/
+/*    }*/
+
+/*    .value-content {*/
+/*        flex-direction: row-reverse;*/
+/*    }*/
+
+/*    .story,*/
+/*    .value {*/
+/*        width: 60%;*/
+/*    }*/
+
+/*    .picture {*/
+/*        width: 35%;*/
+/*    }*/
+/*}*/
+
+/*!* Media Queries pour les ordinateurs *!*/
+/*@media (min-width: 1024px) {*/
+/*    .container-boxes {*/
+/*        gap: 40px;*/
+/*        padding: 40px;*/
+/*    }*/
+
+/*    .story-content,*/
+/*    .value-content {*/
+/*        gap: 50px;*/
+/*    }*/
+/*}*/

@@ -9,6 +9,10 @@ function ProductCard({produit}) {
     const currentLink = self.location.pathname.split("/");
     const productImage = `/image/${produit.image_url || 'image/placeholder.webp'}`;
 
+    const handleClick = (produitsID) => {
+        console.log(produitsID, 'ajout panier')
+    }
+
     return (
         <div className={`card fiche-${currentLink[1]}`}>
             <div className="pix"><img src={productImage} alt={produit.nom}/> </div>
@@ -19,7 +23,7 @@ function ProductCard({produit}) {
                     Voir details
                 </Link>
             </div>
-            <button className='btn-cart'><Link className="link-cart">Ajouter au panier</Link></button>
+            <button className='btn-cart'><Link className="link-cart" onClick={() => handleClick (produit)}>Ajouter au panier</Link></button>
         </div>
     );
 }
