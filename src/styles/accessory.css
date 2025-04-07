@@ -1,13 +1,14 @@
-.banner-acce{
+.banner-acce {
     width: 100%;
     height: 60vh;
-    background-image: url('/public/image/4.png');  /* Le chemin de l'image */
+    min-height: 300px; /* Hauteur minimale pour les petits écrans */
+    background-image: url('/public/image/4.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.main-content-accef{
+.main-content-acce {
     background-image: url('/public/image/Wireframe - 3.png');
     background-size: cover;
     background-position: center;
@@ -15,11 +16,61 @@
     height: auto;
 }
 
-.list-produits-acce{
+.list-produits-acce {
     padding-top: 40px;
     padding-bottom: 50px;
     text-align: center;
     font-size: 2.5rem;
     color: black;
     font-family: horizon;
+}
+
+/* Media Queries pour le responsive */
+
+/* Pour les tablettes */
+@media (max-width: 992px) {
+    .banner-acce {
+        height: 50vh;
+    }
+
+    .list-produits-acce {
+        font-size: 2rem;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+/* Pour les grands smartphones */
+@media (max-width: 768px) {
+    .banner-acce {
+        height: 40vh;
+    }
+
+    .list-produits-acce {
+        font-size: 1.8rem;
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+}
+
+/* Pour les petits smartphones */
+@media (max-width: 480px) {
+    .banner-acce {
+        height: 30vh;
+        min-height: 200px;
+        display: none;
+    }
+
+    .list-produits-acce {
+        font-size: 1.5rem;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 400px) {
+    .list-produits-acce {
+        font-size: 1.3rem;
+    }
 }

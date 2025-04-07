@@ -16,6 +16,7 @@ function ProductLists({handleClick}) {
 
     useEffect(() => {
     const fetchProduits = async () => {
+        console.log(process.env.REACT_APP_API_URL);
         try {
             const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/produits`,
                 {headers : {Authorization : `Bearer ${localStorage.getItem("token")}`}});

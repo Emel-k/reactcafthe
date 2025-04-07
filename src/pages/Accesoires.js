@@ -14,7 +14,7 @@ function Accessoires(props) {
                 </div>
             </header>
 
-            <main className="main-content">
+            <main className="main-content-acce">
                 <h3 className={`list-produits-acce`}> Listes des accessoires</h3>
                 <ProductLists />
             </main>

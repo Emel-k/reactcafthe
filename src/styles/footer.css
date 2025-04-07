@@ -1,21 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-footer{
-    margin-top: 50px;
+    box-sizing: border-box;
 }
 
-.link-footer{
+footer {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.link-footer {
     border-top: 1px solid black;
     display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur petits écrans */
     justify-content: space-around;
     align-items: center;
-
+    padding: 20px 0;
 }
-.link-must{
+
+.link-must {
     list-style: none;
     text-decoration: none;
     margin: 10px;
     color: black;
+    white-space: nowrap; /* Empêche le texte de se casser en plusieurs lignes */
+}
+
+/* Media Queries pour différentes tailles d'écran */
+@media (max-width: 768px) {
+    .link-footer {
+        flex-direction: column; /* Empile les éléments verticalement */
+        padding: 15px 0;
+    }
+
+    .link-must {
+        margin: 8px 0; /* Ajuste les marges pour l'affichage vertical */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        margin-top: 30px;
+    }
+
+    .link-footer {
+        padding: 10px 0;
+    }
+
+    .link-must {
+        font-size: 14px; /* Réduit légèrement la taille de police */
+    }
 }

@@ -1,16 +1,51 @@
-.banner-the{
+.banner-the {
     width: 100%;
     height: 60vh;
-    background-image: url('/public/image/3.png');  /* Le chemin de l'image */
+    min-height: 300px; /* Hauteur minimale pour éviter que la bannière ne soit trop petite */
+    background-image: url('/public/image/3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.main-content-the{
+.main-content-the {
     background-image: url('/public/image/Wireframe - 2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
+}
+
+/* Media Queries pour le responsive */
+
+/* Pour les écrans moyens (tablettes) */
+@media (max-width: 992px) {
+    .banner-the {
+        height: 50vh;
+    }
+}
+
+/* Pour les petits écrans (grands smartphones) */
+@media (max-width: 768px) {
+    .banner-the {
+        height: 40vh;
+        min-height: 250px;
+    }
+}
+
+/* Pour les très petits écrans (smartphones) */
+@media (max-width: 576px) {
+    .banner-the {
+        height: 35vh;
+        min-height: 200px;
+    }
+}
+
+/* Optionnel : pour les écrans extrêmement petits */
+@media (max-width: 480px) {
+    .banner-the {
+        height: 30vh;
+        min-height: 180px;
+        display: none;
+    }
 }
